@@ -122,12 +122,20 @@ body {
   color: var(--yellow);
   border: none;
   font-size: 10px;
+  border-radius: 2px;
 }
 
 .game-info button:hover {
   /* border-bottom: 1px solid var(--bgColor); */
   background-color: var(--yellow);
   color: var(--bgColor);
-  border-radius: 3px;
   cursor: pointer;
+}
+
+.start {
+  background-color: var(--yellow);
+}
+
+.start ol {
+  background-color: var(--yellow);
 }

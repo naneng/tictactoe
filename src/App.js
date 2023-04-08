@@ -90,10 +90,15 @@ export default function Game() {
 
   const moves = history.map((squares, move) => {
     let description;
+    // let startDesc;
+    // const startDesc = document.getElementByClassName("game-info");
+    // const style = { backgroundColor: "yellow"}
     if (move > 0) {
-      description = "Go to move #" + move;
+      description =
+        "Go to move #" + move + (move % 2 === 0 ? " O turn" : " X turn");
     } else {
       description = "Start Game";
+      // description.dovbackgroundColor = "yellow";
     }
     return (
       <li key={move}>
